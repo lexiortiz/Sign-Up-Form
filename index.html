@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Form</h1>
+    <p id="description">This is an explanation of a survey form. Please fill out the form, then make sure to
+        submit your answers.</p>
+    <!-- FORM BEGIN -->
+    <form id="survey-form">
+        <!--Name-->
+        <label for="name" id="name-label">Full Name:
+            <input id="name" type="text" placeholder="Sally Jenkins" required />
+        </label>
+        <br>
+        <!--Email-->
+        <label for="email" id="email-label">Email:
+            <input id="email" type="email" placeholder="sally@snail.com" required />
+        </label>
+        <br>
+        <!--Number-->
+        <label for="number" id="number-label">Age:</label>
+        <input id="number" type="number" placeholder="26" min="18" max="80" />
+        <br>
+        <!--Dropdown-->
+        <label for="dropdown">Current Position:</label>
+        <select name="dropdown" id="dropdown">
+            <option value="unemployeed" class="dropdown-option">Unemployed</option>
+            <option value="student" class="dropdown-option">Student</option>
+            <option value="developer" class="dropdown-option">Developer</option>
+            <option value="designer" class="dropdown-option">Designer</option>
+        </select>
+        <br>
+        <div class="input-buttons" id="radio-div">
+            <!--Radio-->
+            <p id="radio-label-words">Are you interested in becoming a member?</p>
+            <label for="yes" class="radio-label">Yes
+                <input type="radio" id="yes" name="radio" value="yes">
+                <span></span>
+            </label>
+            <br>
+            <label for="no" class="radio-label">No
+                <input type="radio" id="no" name="radio" value="no">
+                <span></span>
+            </label>
+            <br>
+        </div>
+        <div class="input-buttons" id="checkbox-div">
+            <!--Checkboxes-->
+            <p id="checkbox-label-words">How did you hear about us?</p>
+            <label for="linkedin" class="checkbox-label">LinkedIn
+                <input type="checkbox" id="linkedin" name="reach" value="LinkedIn" class="checkboxes">
+                <span></span>
+            </label>
+            <br>
+            <label for="twitter" class="checkbox-label">Twitter
+                <input type="checkbox" id="twitter" name="reach" value="Twitter" class="checkboxes">
+                <span></span>
+            </label>
+            <br>
+        </div>
+        <div id="textarea-div">
+            <!--Textarea-->
+            <label for="textarea" id="textarea-label">Is there anything else you'd like for us to know?
+                (Optional)</label>
+            <textarea type="textarea" id="textarea" rows="5" cols="55"></textarea>
+            <br>
+        </div>
+        <!--Button-->
+        <button id="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
